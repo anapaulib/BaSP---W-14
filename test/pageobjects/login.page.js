@@ -11,12 +11,12 @@ class LoginPage {
         return $('#login-button');
     }
 
-    get menuButton () {
-        return $('#react-burger-menu-btn');
-    }
-
     get errorMessage () {
         return $('#login_button_container > div > form > div.error-message-container.error > h3');
+    }
+
+    get usersList () {
+        return $('#root > div > div.login_wrapper > div.login_credentials_wrap > div');
     }
 
     async login (username, password) {
