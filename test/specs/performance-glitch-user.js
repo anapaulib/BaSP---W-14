@@ -6,8 +6,8 @@ describe('Standard-user login', () => {
         browser.url ('https://www.saucedemo.com/');
     });
 
-    it('should login with valid credentials for stardard_user', async () => {
-        await LoginPage.login('standard_user', 'secret_sauce');
+    it('should login with valid credentials for performance_glitch_user', async () => {
+        await LoginPage.login('performance_glitch_user', 'secret_sauce');
         await expect(HomePage.menuButton).toBeExisting();
         await expect(HomePage.image).toHaveAttr('src', '/static/media/sauce-backpack-1200x1500.34e7aa42.jpg');
     });
