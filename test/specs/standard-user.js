@@ -1,5 +1,5 @@
 import LoginPage from  '../pageobjects/login.page';
-import HomePage from '../pageobjects/home.page'
+import HomePage from '../pageobjects/home.page';
 
 describe('Standard-user login', () => {
     beforeAll ('Navigate to url', () => {
